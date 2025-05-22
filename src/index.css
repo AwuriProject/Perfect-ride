@@ -1,0 +1,292 @@
+@import "tailwindcss";
+
+@theme{
+ --shadow-testimonial: 0px 8px 16px rgba(0, 0, 0, 0.08);
+ --shadow-review: 0px 4px 16px rgba(0, 0, 0, 0.08);
+ --shadow-btn-primary: 0px 28px 11px rgba(255, 190, 0, 0.02), 0px 16px 10px rgba(255, 190, 0, 0.08), 0px 7px 7px rgba(255, 190, 0, 0.14), 0px 2px 4px rgba(255, 190, 0, 0.16);
+  --shadow-cta: 0px 31px 12px rgba(0, 0, 0, 0.02), 0px 17px 10px rgba(0, 0, 0, 0.08), 0px 8px 8px rgba(0, 0, 0, 0.14), 0px 2px 4px rgba(0, 0, 0, 0.16)
+}
+
+
+@layer base {
+  html {
+    @apply text-base box-border font-[Inter];
+  }
+  *,
+  *::before,
+  *::after {
+    @apply p-0 m-0 box-border no-underline font-[Inter];
+  }
+  body {
+    @apply bg-white font-[Inter];
+  }
+  nav {
+    @apply flex items-center justify-between pt-4 pb-4;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    @apply text-base text-black font-[Inter];
+  }
+  
+}
+/* max-w-[96rem] mx-auto */
+@layer components {
+  .max__width{
+    @apply max-w-[130rem] mx-auto
+  }
+  .section {
+    @apply  px-5 sm:pr-10 sm:pl-10 lg:pr-[104px] lg:pl-[104px] w-full border-none font-[Inter] ;
+  }
+  .hero__section {
+    @apply  relative bg-[url("/images/hero-image-empty-desktop.png")] bg-no-repeat bg-center bg-cover w-full h-[850px] sm:h-[1133px];
+  }
+  .logo{
+    @apply w-[32px] h-[32px] sm:w-[40px] sm:h-[40px]
+  }
+  .content-flex {
+    @apply flex items-center gap-1;
+  }
+ 
+  .list {
+    @apply opacity-0 invisible absolute top-[8%] right-[20px] mt-2 w-[170px] h-[163px] p-5 
+         bg-white rounded-2xl shadow-testimonial flex flex-col items-center justify-center
+
+         lg:static lg:mx-auto lg:w-auto lg:h-auto lg:p-0 lg:bg-transparent lg:shadow-none lg:flex-row lg:gap-10;
+  }
+  .list-item {
+    @apply mr-1.5 px-3 py-2 w-full text-left 
+         rounded-[12px] hover:bg-[#FFE599] 
+         cursor-pointer
+
+         lg:px-0 lg:py-0 lg:rounded-none lg:w-auto 
+         lg:hover:bg-transparent;
+  }
+  .list-link{
+    @apply text-[#1b1b1b]  lg:text-white lg:hover:text-[#ffbe00] lg:font-medium lg:text-base lg:leading-[100%]
+  }
+
+  .menu {
+    @apply cursor-pointer lg:hidden;
+  }
+  .modal {
+    @apply w-full h-9.5 text-[13px] flex justify-between items-center pt-1 pb-1 bg-[#FFE599] sm:text-base ;
+  }
+  .modal p{
+    @apply font-normal text-[13px] lg:text-[16px] leading-[100%]
+  }
+  .hero__title {
+    @apply flex flex-col lg:w-[800px] gap-10 lg:pt-[128px];
+  }
+  .hero__main--title{
+    @apply flex flex-col mt-[72px] p-0 gap-4
+  }
+  .hero__main--title h1{
+    @apply text-[45px] leading-[120%] text-white font-bold sm:text-[64px]
+  }
+  .hero__main--title p{
+    @apply font-medium text-base leading-[120%] text-white sm:text-2xl sm:font-normal
+  }
+  .hero__car--logo{
+    @apply flex items-center justify-center lg:absolute lg:bottom-[10%] lg:left-[25%]  
+  }
+  .trusted__user{
+    @apply flex items-center pt-0 pb-4 pl-0 pr-0 gap-2 rounded-4xl
+  }
+  .trusted__user p{
+    @apply text-white font-normal
+  }
+  .hero__btn{
+    @apply flex items-center gap-3
+  }
+
+  /* Get Started Section */
+  .get__started{
+    @apply flex flex-col items-center justify-center gap-6 py-10 lg:py-[80px] bg-white 
+  }
+  .get__started h2{
+    @apply text-[#1b1b1b] text-center font-semibold text-2xl leading-[29px] lg:font-bold lg:text-5xl lg:leading-[100%] lg:-tracking-[-0.02em]
+  }
+  .get__started--content{
+    @apply flex flex-col-reverse items-center justify-center gap-6 lg:flex-row
+  }
+  .get__started--content--1{
+    @apply flex items-center flex-col gap-6
+  }
+  .get__started--cards{
+    @apply flex flex-col
+  }
+  .get__started--card{
+    @apply flex gap-4
+  }
+  .get__started--card--title{
+    @apply flex flex-col gap-1 lg:gap-2
+  }
+  .get__started--card--title h4{
+    @apply font-semibold text-base lg:text-[24px] text-[#1b1b1b] leading-[23px]
+  }
+  .get__started--card--title p{
+    @apply text-[#666666] font-normal text-[14px] lg:text-[16px] leading-[140%]
+  }
+
+  /* Limited Offer Section */
+  .limited__offer--title{
+    @apply absolute top-2.5 translate-4 lg:top-10 lg:translate-6
+  }
+  .limited__offer--title p{
+    @apply w-[303px] mb-4 text-white 
+    font-normal text-base leading-[21px] 
+    sm:w-[616px] lg:font-medium lg:text-[34px] 
+    lg:leading-[43px] lg:w-[854px]
+  }
+  .driver__btn{
+    @apply 
+    text-lg font-medium leading-[100%] 
+    text-white pt-4 pb-4 pr-6 pl-6 
+    bg-[rgba(255,255,255,0.1)] rounded-2xl 
+    shadow-cta
+    transition-all duration-600 ease-in-out 
+    origin-left
+    hover:bg-black hover:text-white 
+    hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
+    hover:-translate-x-1;
+  }
+  .cta{
+    @apply transition-all duration-600 ease-in-out 
+    origin-left
+    hover:bg-black hover:text-white 
+    hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
+    hover:-translate-x-1;
+  }
+  .btn__app{
+    @apply flex items-center w-auto
+     bg-[#1b1b1b] gap-1 py-1.5 px-4 
+     lg:gap-2.5 lg:py-2 lg:px-6 rounded-md lg:rounded-[12px]
+     transition-all duration-600 ease-in-out 
+    origin-left
+    hover:bg-black hover:text-white 
+    hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
+    hover:-translate-x-1 cursor-pointer
+  }
+  .btn__download{
+    @apply text-black text-[14px] 
+    font-medium leading-[100%] tracking-[0.02rem] 
+    pt-2.5 pb-2.5 pl-6 pr-6 w-45 h-12 bg-[#ffbe00] rounded-lg
+    transition-all duration-600 ease-in-out 
+    origin-left
+    hover:bg-black hover:text-white 
+    hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
+    hover:-translate-x-1 cursor-pointer
+  }
+  .btn__browse{
+    @apply mb-4 flex items-center gap-2 w-45 h-14 bg-[#ffbf00] pt-4 pb-4 pl-6 pr-6 rounded-2xl
+    transition-all duration-600 ease-in-out 
+    origin-left
+    hover:bg-black
+    hover:text-white
+    hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
+    hover:-translate-x-1 cursor-pointer
+  }
+  .btn__browse p{
+    @apply text-[#1b1b1b] font-medium leading-[100%] text-[18px] hover:text-white
+  }
+  .btn__subscribe{
+    @apply text-[#1b1b1b] font-medium 
+    text-base leading-[100%] flex justify-center 
+    items-center gap-2.5 pt-2 pb-2 pl-4 pr-4 w-[110px] 
+    h-[32px] bg-[#ffbe00] rounded-[8px]
+    transition-all duration-600 ease-in-out 
+    origin-left
+    hover:bg-black
+    hover:text-white
+    hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
+    hover:-translate-x-1 cursor-pointer
+  }
+  .sm{
+    @apply hover:text-[#FFBF00] cursor-pointer
+  }
+}
+
+ @utility btn{
+  @apply 
+  rounded-2xl pt-4 pb-4 pr-6 pl-6 
+  bg-[#FFBF00] text-black font-medium text-lg leading-none text-center 
+  shadow-btn-primary 
+  transition-all duration-600 ease-in-out 
+  origin-left
+  hover:bg-black hover:text-white 
+  hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
+  hover:-translate-x-1;
+ }
+
+@utility cards{
+  @apply flex flex-col items-center gap-4 lg:gap-10
+  lg:flex-row
+}
+@utility card{
+  @apply  flex flex-col items-center justify-center text-center gap-4 w-full h-[358px] bg-white rounded-3xl p-6 shadow-testimonial 
+  sm:h-[419px] sm:p-10 sm:gap-6
+  lg:h-[506px]
+  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 hover:shadow-xl
+}
+@utility slider{
+  @apply w-full flex flex-col items-center justify-center lg:flex-row lg:gap-6
+}
+
+
+@utility slide{
+  @apply flex flex-col items-start gap-6 p-6 w-auto h-auto bg-white mb-4 shadow-review rounded-2xl
+}
+
+ @utility testimonial{
+  @apply flex flex-col gap-4 p-4 bg-white 
+  rounded-2xl shadow-testimonial w-full 
+  lg:w-1/2 px-4
+  transition-transform duration-300 
+  ease-in-out transform hover:scale-105 
+  hover:-translate-y-1 hover:shadow-xl
+ }
+
+/* Keyframes for marquee */
+@keyframes marquee-lg {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-md {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-sm {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tailwind utilities for animation durations */
+.animate-marquee-lg {
+  animation: marquee-lg 15s linear infinite;
+}
+.animate-marquee-md {
+  animation: marquee-md 12s linear infinite;
+}
+.animate-marquee-sm {
+  animation: marquee-sm 10s linear infinite;
+}
+
+
+
