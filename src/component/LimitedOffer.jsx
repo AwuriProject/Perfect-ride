@@ -1,6 +1,6 @@
 import React from "react";
 import CarouselPage from "./CarouselPage";
-import CountdownTimer from './CountdownTimer'
+import CountDownTimer from './CountdownTimer'
 
 const LimitedOffer = () => {
   return (
@@ -10,7 +10,7 @@ const LimitedOffer = () => {
           Limited Reward Offers
         </h1>
         
-        <CountdownTimer targetDate="2025-08-31T00:00:00"/>
+        <CountDownTimer targetDate="2025-08-31T00:00:00"/>
       </div>
 
       

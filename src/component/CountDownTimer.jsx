@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const CountdownTimer = ({ targetDate }) => {
+const CountDownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: '00',
     hours: '00',
@@ -55,4 +55,4 @@ const CountdownTimer = ({ targetDate }) => {
   );
 };
 
-export default CountdownTimer;
+export default CountDownTimer;
