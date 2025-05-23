@@ -5,13 +5,13 @@ const usePlatformRedirect = () => {
 
     if (/android/i.test(userAgent)) {
       // Android: Google Play Store
-      window.location.href = "https://play.google.com/store/apps/details?id=your.app.id";
+      window.location.href = "https://play.google.com/store/apps/details?id=com.perfectride.apkuser";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       // iOS: Apple App Store
-      window.location.href = "https://apps.apple.com/app/idXXXXXXXXX";
+      window.location.href = "https://apps.apple.com/ng/app/perfectride-ride-earn/id6744430274";
     } else {
       // Desktop: Browser-based download
-      window.location.href = "https://yourwebsite.com/download";
+      window.location.href = "https://play.google.com/store/apps/details?id=com.perfectride.apkuser";
     }
   };
 

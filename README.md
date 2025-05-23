@@ -1,12 +1,20 @@
-# React + Vite
+# 🚗 Perfect Ride
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Perfect Ride is a full-featured ride-hailing platform. It provides a seamless and user-friendly experience for both drivers and riders, enabling fast, fair, and secure transportation.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧭 Real-time ride matching between riders and drivers
+- 🎚️ Automatic download weather you are using andriod, ios or windows etc
+- 📱 Cross-platform UI with responsive design (mobile & desktop)
 
-## Expanding the ESLint configuration
+## 🔧 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:**
+- React  / Vite (choose the one you used)
+- Tailwind CSS 
+- JavaScript
+
+
+git clone https://github.com/AwuriProject/Perfect-app.git
+cd Perfect-app
