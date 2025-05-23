@@ -54,7 +54,7 @@ const GetStarted = () => {
           </div>
 
           <div className='flex self-start pl-6 pr-6'>
-              {/* <a href="#"className='btn__browse'>
+               {/* <a href="#"className='btn__browse'>
                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1039_46)">
                     <path d="M5.256 0.820068H18.744C21.6469 0.820068 24 3.17319 24 6.07607V19.5641C24 22.4669 21.6469 24.8201 18.744 24.8201H5.256C2.35312 24.8201 0 22.4669 0 19.5641V6.07607C0 3.17319 2.35312 0.820068 5.256 0.820068Z" fill="url(#paint0_linear_1039_46)"/>
@@ -71,7 +71,7 @@ const GetStarted = () => {
                     </defs>
                 </svg>
                 <p >Download</p>
-              </a> */}
+              </a>  */}
               <DownloadButton />
           </div>
         </div>

@@ -1,5 +1,6 @@
 // OfferCarousel.jsx
 import React, { useRef, useEffect } from "react";
+import DownloadButton from './DownloadButton'
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
@@ -111,6 +112,7 @@ const CarouselPage = () => {
               >
                 Download Now
               </a>
+              {/* <DownloadButton /> */}
             </div>
           </div>
         </div>

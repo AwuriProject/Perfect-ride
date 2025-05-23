@@ -8,7 +8,7 @@ const MostTrusted = () => {
             <div className='flex flex-col items-start justify-center p-4 gap-3 lg:px-[56px] lg:py-[56px] lg:gap-6 max-w-[1232px]'>
                 <p className='font-medium text-[12px] leading-[15px] text-[#1b1b1b] sm:text-2xl sm:leading-[29px] sm:font-semibold lg:text-[36px] lg:leading-[36px] lg:font-bold'>Get The Most Trusted rides near you!</p>
                 <div className="flex gap-2 lg:gap-6 p-0 w-auto  items-center">
-                    <a href="#" className='btn__app'>   
+                    <a href="https://play.google.com/store/apps/details?id=com.perfectride.apkuser" className='btn__app'>   
                     <svg className='w-3.5 h-3.5 lg:h-6 lg:w-6' width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_967_2908)">
                         <path d="M13.5431 15.2554L0.123047 29.293C0.273753 29.8262 0.544577 30.3179 0.914817 30.7307C1.28506 31.1434 1.74491 31.4661 2.25922 31.6742C2.77353 31.8823 3.32869 31.9702 3.88225 31.9312C4.43582 31.8923 4.97313 31.7275 5.45312 31.4494L20.5533 22.8632L13.5431 15.2554Z" fill="#EA4335"/>
@@ -29,7 +29,7 @@ const MostTrusted = () => {
                         </div>
                     </a>
                     
-                    <a href="#" className='btn__app'>   
+                    <a href="https://apps.apple.com/ng/app/perfectride-ride-earn/id6744430274" className='btn__app'>   
                         
                         <svg className='w-3.5 h-3.5 lg:h-6 lg:w-6' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.8554 28.8781C22.3311 30.3557 20.6669 30.1224 19.0649 29.4224C17.3695 28.707 15.8142 28.6759 14.0255 29.4224C11.7858 30.3868 10.6037 30.1068 9.26612 28.8781C1.67597 21.0546 2.79583 9.14056 11.4125 8.70506C13.5123 8.81394 14.9743 9.85603 16.203 9.94935C18.0383 9.57606 19.7959 8.50287 21.7557 8.64285C24.1042 8.82949 25.8774 9.76271 27.0439 11.4425C22.1912 14.351 23.3421 20.7435 27.7905 22.5322C26.9039 24.8652 25.7529 27.1827 23.8398 28.8936L23.8554 28.8781ZM16.0475 8.61174C15.8142 5.14329 18.6294 2.28143 21.8645 2.00146C22.3156 6.01429 18.225 9.00058 16.0475 8.61174Z" fill="white"/>
