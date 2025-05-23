@@ -104,7 +104,7 @@ const CarouselPage = () => {
           >
             <div className="absolute inset-0 bg-black/40 rounded-[40px] z-0"></div>
             <div className="limited__offer--title mb-[100px] -top-1.5 bottom-[30%] absolute lg:top-10 lg:bottom-[25%] z-10 p-4 lg:p-8">
-              <p className="mb-4 text-white font-normal text-[12px] leading-[21px] sm:w-[616px] lg:font-medium lg:text-[34px] lg:leading-[43px] lg:w-[854px]">
+              <p className="mb-4 text-white font-normal text-base leading-[21px] sm:w-[616px] lg:font-medium lg:text-[34px] lg:leading-[43px] lg:w-[854px]">
                 {offer.text}
               </p>
               

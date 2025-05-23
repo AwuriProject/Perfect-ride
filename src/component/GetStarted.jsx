@@ -5,7 +5,7 @@ import AppIcon from './AppIcon'
 const GetStarted = () => {
   return (
     <div className='get__started'>
-      <div className="max__width">
+      <div className="max__width flex flex-col gap-6 sm:gap-[10px] lg:gap-[40px] ">
         <h2>
             Get Started in 3 Steps
         </h2>
@@ -65,6 +65,7 @@ const GetStarted = () => {
           </div>
 
         </div>
+        
       </div>
     </div>
   )

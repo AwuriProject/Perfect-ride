@@ -23,7 +23,7 @@ const Header = () => {
           <a className="list-link">Driver</a>
         </li>
         <li className="list-item">
-          <a className="list-link">Earn-to-ride</a>
+          <a className="list-link">Ride-2-Earn</a>
         </li>
       </ul>
 

@@ -145,8 +145,8 @@
   }
   .driver__btn{
     @apply 
-    text-[8px] w-[30%]
-    text-white py-3 px-2.5 lg:py-3.5 lg:px-6 lg:text-lg 
+    text-base w-auto
+    text-white py-1.5 px-2.5 lg:py-3.5 lg:px-6 lg:text-lg 
     bg-[rgba(255,255,255,0.1)] rounded-2xl 
     shadow-cta
     transition-all duration-600 ease-in-out 
@@ -183,8 +183,8 @@
     hover:-translate-x-1 cursor-pointer
   }
   .btn__browse{
-    @apply  flex items-center gap-2 w-45 h-14 bg-[#ffbf00] py-4 px-6 rounded-2xl
-    transition-all duration-600 ease-in-out 
+    @apply  flex items-center gap-2 w-45 h-10 bg-[#ffbf00] py-4 px-6 rounded-2xl
+    lg:h-14 transition-all duration-600 ease-in-out 
     origin-left
     hover:bg-black
     hover:text-white
@@ -201,8 +201,7 @@
     h-[32px] bg-[#ffbe00] rounded-[8px]
     transition-all duration-600 ease-in-out 
     origin-left
-    hover:bg-black
-    hover:text-white
+    hover:bg-black hover:text-white
     hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
     hover:-translate-x-1 cursor-pointer
   }
@@ -213,14 +212,14 @@
 
  @utility btn{
   @apply 
-  rounded-2xl leading-[100%] w-[30%] text-sm py-1.5 px-2.5 lg:py-4 lg:px-6 lg:text-lg
+  rounded-2xl leading-[100%] w-auto text-sm py-1.5 px-2.5 lg:py-4 lg:px-6 lg:text-lg
   bg-[#FFBF00] text-black font-medium text-lg leading-none text-center 
   shadow-btn-primary 
   transition-all duration-600 ease-in-out 
   origin-left
   hover:text-white hover:bg-black 
   hover:shadow-[0_4px_10px_rgba(0,0,0,0.8)] 
-  hover:-translate-x-1;
+  hover:-translate-x-1 cursor-pointer;
  }
 
 @utility cards{
