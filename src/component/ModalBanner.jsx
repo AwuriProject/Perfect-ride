@@ -11,7 +11,7 @@ const ModalBanner = () => {
 
   return (
     <div className="modal section max__width">
-      <p className="text-sm font-medium text-black">
+      <p className="text-[10px] lg:text-base font-medium text-black">
         <strong>₦10,000</strong> voucher bonus for new riders🔥. Claim!
       </p>
       <svg

@@ -22,7 +22,7 @@ const WhatPeopleSay = () => {
                 className="w-full h-40 rounded-lg aspect-video"
               ></iframe>
               <div className="flex items-center gap-3 mt-3">
-                <img src="/images/avatar-six.png" alt="human avatar" className="w-[40px] h-[40px]" />
+                <img src="/images/avater-one.png" alt="human avatar" className="w-[40px] h-[40px]" />
                 <div className="info">
                   <h4 className="name font-semibold text-[16px] leading-[16px] text-[#1b1b1b]">Xander</h4>
                   <p className="location text-[#1b1b1b] font-normal text-[12px] leading-[15px]">Youtuber</p>
@@ -36,9 +36,9 @@ const WhatPeopleSay = () => {
                 className="w-full h-40 rounded-lg aspect-video"
               ></iframe>
               <div className="flex items-center gap-3 mt-3">
-                <img src="/images/avatar-six.png" alt="human avatar" className="w-[40px] h-[40px]" />
+                <img src="/images/avater-two.png" alt="human avatar" className="w-[40px] h-[40px]" />
                 <div className="info">
-                  <h4 className="name font-semibold text-[16px] leading-[16px] text-[#1b1b1b]">Xander</h4>
+                  <h4 className="name font-semibold text-[16px] leading-[16px] text-[#1b1b1b]">Blessing</h4>
                   <p className="location text-[#1b1b1b] font-normal text-[12px] leading-[15px]">Youtuber</p>
                 </div>
               </div>

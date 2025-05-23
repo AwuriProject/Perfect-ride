@@ -33,7 +33,7 @@ const CountDownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-1.5 items-center lg:items-start lg:gap-1">
       {['days', 'hours', 'minutes', 'seconds'].map((unit, index) => (
         <React.Fragment key={unit}>
           <div className="flex flex-col gap-1 w-[40px] items-center justify-center lg:w-[67px] lg:gap-[5px]">
@@ -47,7 +47,7 @@ const CountDownTimer = ({ targetDate }) => {
             </p>
           </div>
           {index < 3 && (
-            <p className="font-bold text-lg text-[#1b1b1b] leading-[100%]"> : </p>
+            <p className="font-bold text-lg text-[#1b1b1b] leading-[100%] text-center"> : </p>
           )}
         </React.Fragment>
       ))}

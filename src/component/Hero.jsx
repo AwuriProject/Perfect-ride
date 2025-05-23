@@ -2,6 +2,7 @@ import { motion, useAnimation } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import { useInView } from 'framer-motion'
 import ModalBanner from './ModalBanner'
+import DownloadButton from './DownloadButton'
 import Header from './Header.jsx'
 
 const Hero = () => {
@@ -38,7 +39,7 @@ const Hero = () => {
               <p>Save up-to 60% on ride cost when pool. Drivers earn 100% fare - Better Pay</p>
             </div>
             <div className="hero__btn">
-              <button className="btn">Download App</button>
+              <DownloadButton className="btn btn_two"/>
               <button className="driver__btn">Become A Driver</button>
             </div>
           </div>

@@ -4,8 +4,11 @@
 .driver__btn:hover,
 .cta:hover{
     border: none;
+    
 }
-
+.btn_2:hover{
+    color: #fff
+}
 .cta{
     display: flex;
     align-items: center;

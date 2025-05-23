@@ -5,7 +5,7 @@ const PerfectRide = () => {
     const year = time.getFullYear()
   return (
     <div className='flex flex-col max__width mt-[40px]'>
-        <div className='flex flex-col lg:justify-between lg:flex-row items-start section gap-10 lg:py-  [80px]'>
+        <div className='flex flex-col pb-[24px] lg:justify-between lg:pb-[24px] lg:flex-row items-start section gap-10 lg:py-[80px]'>
 
             <div className='flex flex-col items-start p-0 gap-4 mt-10 '>
                 <div className='flex items-center p-0 w-[166px] h-[29px] gap-[5px]'>

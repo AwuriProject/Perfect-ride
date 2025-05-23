@@ -1,6 +1,7 @@
 // OfferCarousel.jsx
 import React, { useRef, useEffect } from "react";
 import DownloadButton from './DownloadButton'
+import AppIcon from './AppIcon'
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
@@ -102,17 +103,16 @@ const CarouselPage = () => {
             style={{ backgroundImage: `url(${offer.image})` }}
           >
             <div className="absolute inset-0 bg-black/40 rounded-[40px] z-0"></div>
-            <div className="limited__offer--title absolute bottom-[25%] z-10 p-4 lg:p-8">
-              <p className="w-[303px] mb-4 text-white font-normal text-base leading-[21px] sm:w-[616px] lg:font-medium lg:text-[34px] lg:leading-[43px] lg:w-[854px]">
+            <div className="limited__offer--title mb-[100px] -top-1.5 bottom-[30%] absolute lg:top-10 lg:bottom-[25%] z-10 p-4 lg:p-8">
+              <p className="mb-4 text-white font-normal text-[12px] leading-[21px] sm:w-[616px] lg:font-medium lg:text-[34px] lg:leading-[43px] lg:w-[854px]">
                 {offer.text}
               </p>
-              <a
-                href="#"
-                className="btn__download bg-white text-black px-4 py-2 rounded-md font-semibold"
-              >
-                Download Now
-              </a>
-              {/* <DownloadButton /> */}
+              
+              
+                
+                <DownloadButton  className='btn__browse'/>
+              
+
             </div>
           </div>
         </div>
@@ -122,3 +122,5 @@ const CarouselPage = () => {
 };
 
 export default CarouselPage;
+
+  

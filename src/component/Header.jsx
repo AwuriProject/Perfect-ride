@@ -34,7 +34,7 @@ const Header = () => {
         </div>
         
       </div>
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-[24px] lg:gap-10">
       <a className="cta">Whitelist</a>
 
       <div className="menu" onClick={handleClick}>
