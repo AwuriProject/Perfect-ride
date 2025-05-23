@@ -1,6 +1,6 @@
 import React from "react";
 import CarouselPage from "./CarouselPage";
-import CountDownTimer from './CountdownTimer.jsx'
+import CountDownTimer from './CountDownTimer.jsx'
 
 const LimitedOffer = () => {
   return (
