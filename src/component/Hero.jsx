@@ -50,7 +50,11 @@ const Hero = () => {
           </div>
 
           <div className="trusted__user">
-            <img src="/images/team-group.png" alt="trusted users" />
+            <img
+              src="/images/people-group.png"
+              alt="trusted users"
+              className="h-[32px]"
+            />
             <p>
               Trusted by <strong>5000+</strong> users
             </p>

@@ -2,21 +2,22 @@ import { useEffect, useState } from "react";
 
 const OurPartners = () => {
   const logos = [
-    "/images/comp-logo-five.png",
-    "/images/comp-logo-four.png",
-    "/images/comp-logo-one.png",
-    "/images/comp-logo-two.png",
-    "/images/comp-logo-three.png",
-    "/images/comp-logo-five.png",
-    "/images/comp-logo-four.png",
-    "/images/comp-logo-one.png",
-    "/images/comp-logo-two.png",
-    "/images/comp-logo-three.png",
-    "/images/comp-logo-five.png",
-    "/images/comp-logo-four.png",
-    "/images/comp-logo-one.png",
-    "/images/comp-logo-two.png",
-    "/images/comp-logo-three.png",
+    "/images/uba-logo.png",
+    "/images/nortforge-logo.png",
+    "/images/rbc-logo.png",
+    "/images/osler-logo.png",
+    "/images/uba-logo.png",
+    "/images/nortforge-logo.png",
+    "/images/rbc-logo.png",
+    "/images/osler-logo.png",
+    "/images/uba-logo.png",
+    "/images/nortforge-logo.png",
+    "/images/rbc-logo.png",
+    "/images/osler-logo.png",
+    "/images/uba-logo.png",
+    "/images/nortforge-logo.png",
+    "/images/rbc-logo.png",
+    "/images/osler-logo.png",
   ];
 
   const repeatedLogos = [...logos, ...logos]; // Duplicate for seamless loop
@@ -46,7 +47,8 @@ const OurPartners = () => {
 
       <div className="flex items-center justify-center w-full lg:max-w-[800px] overflow-hidden mt-6 group">
         <div
-          className={`flex items-center w-max whitespace-nowrap animate-${animationSpeed} group-hover:[animation-play-state:paused]`} style={{ width: '200%' }} // important for 100% scroll!
+          className={`flex items-center w-max whitespace-nowrap animate-${animationSpeed} group-hover:[animation-play-state:paused]`}
+          style={{ width: "200%" }} // important for 100% scroll!
         >
           {repeatedLogos.map((logo, index) => (
             <img
