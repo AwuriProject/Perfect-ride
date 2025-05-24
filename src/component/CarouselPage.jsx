@@ -1,16 +1,10 @@
 // OfferCarousel.jsx
 import React, { useRef, useEffect } from "react";
-import DownloadButton from './DownloadButton'
-import AppIcon from './AppIcon'
+import DownloadButton from "./DownloadButton";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
 const offers = [
-  {
-    id: 1,
-    text: "Enjoy cheaper ride fares & grab the opportunity to socialize and network.",
-    image: "/images/offer-slider-image-desktop-1.png",
-  },
   {
     id: 2,
     text: "Start your ride with $100 welcome bonus - Available for first 10,000 signups.",
@@ -21,12 +15,18 @@ const offers = [
     text: "Stay active to get eligible for the $Perfect utility token airdrops.",
     image: "/images/offer-slider-image-desktop-3.png",
   },
-  {
-    id: 4,
-    text: "Drivers Earn 100% Fares Paid By Riders! Own what you truly deserve Chief.",
-    image: "/images/offer-slider-image-desktop-4.png",
-  },
 ];
+
+// {
+//   id: 1,
+//   text: "Enjoy cheaper ride fares & grab the opportunity to socialize and network.",
+//   image: "/images/offer-slider-image-desktop-1.png",
+// },
+// {
+//     id: 4,
+//     text: "Drivers Earn 100% Fares Paid By Riders! Own what you truly deserve Chief.",
+//     image: "/images/offer-slider-image-desktop-4.png",
+//   },
 
 const CarouselPage = () => {
   const timer = useRef();
@@ -104,15 +104,11 @@ const CarouselPage = () => {
           >
             <div className="absolute inset-0 bg-black/40 rounded-[40px] z-0"></div>
             <div className="limited__offer--title mb-[100px] -top-1.5 bottom-[30%] absolute lg:top-10 lg:bottom-[25%] z-10 p-4 lg:p-8">
-              <p className="mb-4 text-white font-normal text-base leading-[21px] sm:w-[616px] lg:font-medium lg:text-[34px] lg:leading-[43px] lg:w-[854px]">
+              <p className="mb-4 text-white font-semibold text-base leading-[21px] sm:w-[616px] lg:font-medium lg:text-[34px] lg:leading-[43px] lg:w-[854px]">
                 {offer.text}
               </p>
-              
-              
-                
-                <DownloadButton  className='btn__browse'/>
-              
 
+              <DownloadButton className="btn__browse" />
             </div>
           </div>
         </div>
@@ -122,5 +118,3 @@ const CarouselPage = () => {
 };
 
 export default CarouselPage;
-
-  
