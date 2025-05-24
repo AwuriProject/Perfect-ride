@@ -19,13 +19,19 @@ const Header = () => {
         } lg:opacity-100 lg:visible`}
       >
         <li className="list-item">
-          <a className="list-link">Riders</a>
+          <a href="#get-started" className="list-link">
+            Riders
+          </a>
         </li>
         <li className="list-item">
-          <a className="list-link">Drivers</a>
+          <a href="#why-choose-us" className="list-link">
+            Drivers
+          </a>
         </li>
         <li className="list-item">
-          <a className="list-link">Ride-2-Earn</a>
+          <a href="#limited-offer" className="list-link">
+            Ride-2-Earn
+          </a>
         </li>
       </ul>
 

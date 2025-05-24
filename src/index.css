@@ -12,7 +12,7 @@
 
 @layer base {
   html {
-    @apply box-border font-[Inter];
+    @apply box-border font-[Inter] scroll-smooth;
   }
   *,
   *::before,
@@ -20,7 +20,7 @@
     @apply p-0 m-0 box-border no-underline font-[Inter];
   }
   body {
-    @apply bg-white font-[Inter];
+    @apply bg-white font-[Inter] ;
   }
   nav {
     @apply flex items-center justify-between pt-4 pb-4;
