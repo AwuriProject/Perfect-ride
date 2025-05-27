@@ -12,7 +12,8 @@ const ModalBanner = () => {
   return (
     <div className="modal section max__width">
       <p className="text-[10px] lg:text-base font-medium text-black">
-        <strong>₦10,000</strong> voucher bonus for new riders🔥. Claim!
+        <strong>₦10,000</strong> Bonus for New Riders in Nigeria🔥.{" "}
+        <a href="#limited-offer">CLAIM!</a>
       </p>
       <svg
         onClick={handleClose}
@@ -36,4 +37,3 @@ const ModalBanner = () => {
 };
 
 export default ModalBanner;
-

@@ -17,7 +17,7 @@ const slides = [
     stars: 5,
   },
   {
-    text: "Makin more on Perfect than other. No commissions real profits",
+    text: "Making more on Perfect than other. No commissions real profits",
     name: "John",
     location: "Toronto",
     avatar: "/images/avater-four.png",
