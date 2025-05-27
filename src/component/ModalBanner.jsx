@@ -1,7 +1,9 @@
 import { useState } from "react";
+import usePlatformRedirect from "./DriversUrl.js";
 
 const ModalBanner = () => {
   const [showModal, setShowModal] = useState(true);
+  const handleRedirect = usePlatformRedirect();
 
   const handleClose = () => {
     setShowModal(false);
@@ -12,8 +14,10 @@ const ModalBanner = () => {
   return (
     <div className="modal section max__width">
       <p className="text-[10px] lg:text-base font-medium text-black">
-        <strong>₦10,000</strong> Bonus for New Riders in Nigeria🔥.{" "}
-        <a href="#limited-offer">CLAIM!</a>
+        <strong>₦50,000</strong> Welcome Bonus For New Drivers in Nigeria🔥.{" "}
+        <a href="#" onClick={handleRedirect}>
+          START!
+        </a>
       </p>
       <svg
         onClick={handleClose}

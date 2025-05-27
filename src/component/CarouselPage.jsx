@@ -7,7 +7,7 @@ import { useKeenSlider } from "keen-slider/react";
 const offers = [
   {
     id: 2,
-    text: "Start your ride with $100 welcome bonus - Available for first 10,000 signups.",
+    text: "Become a Driver in Nigeria & Claim N50,000 Welcome Bonus - T&C Apply!🔥",
     image: "/images/offer-slider-image-desktop-2.png",
   },
   {
